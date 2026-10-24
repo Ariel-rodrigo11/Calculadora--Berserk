@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'RoadRage';
+    src: url('./Road_Rage.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    height: 100vh
+}
+
+body {
+    background-image: url(MainBackground.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-family: 'RoadRage', sans-serif;
+}
+
+button, .display {
+    background-image: url(mark_of_sacr.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: left;
+
+    font-family: 'RoadRage', sans-serif;
+}
+
+.Calculadora{
+    border: ridge darkred;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(138, 3, 3, 1);
+
+    text-align: center;
+    width: 320px;
+
+    background-color: black;
+}
+
+.display{
+    border: 5px inset darkred;
+    background-color: #111;
+    color: #fff;
+
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    min-height: 50px;
+    text-align: right;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.button{
+    border: 3px ridge outset #333;
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.button.number{
+    background-image: url(BlackButton.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-color: black;
+
+    background-color: #333;
+    color: white;
+}
+
+.button.op{
+    color: whitesmoke;
+    border-color: red;
+    background-image: url(Behelits.png);
+    background-color: darkred;
+    background-size: cover;
+}
+
+.button.special{
+    border-color: white;
+    background-image: url(whitebutton.png);
+    background-size: cover;
+    background-color: lightyellow;
+    color: black;
+}
+
+.button.wide{
+    grid-column: span 2;
+    border-radius: 200px;
+}
+
+.button.equal{
+    grid-column: span 2;
+    border-radius: 200px;
+}
